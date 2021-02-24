@@ -19,27 +19,12 @@ TEST(ToUpperTest, BasicTest){
     char inputString[] = "Hello World";
     /*Act*/
     toUpper(inputString);
-    std::cout << "After toUpper(): " << inputString << '\n';
-    /*Checking pointers*/
-    if(inputString == "HELLO WORLD") // pointer
-    {
-        std::cout << "Pointer: Equal strings\n";
-    }
-    else
-    {
-        std::cout << "Pointer: Unequal strings\n";
-    }
-        /*Using strcmp()*/
-    if(0 == strcmp(inputString,"HELLO WORLD")) // content
-    {
-        std::cout << "Content: Equal strings\n";
-    }
-    else
-    {
-        std::cout << "Content: Unequal strings\n";
-    }
     /*Assert*/
-    ASSERT_EQ("HELLO WORLD", inputString);
+    ASSERT_STREQ("HELLO WORLD", inputString);
+
+    /*Using std::string*/
+    std::string str(inputString);
+    ASSERT_EQ("HELLO WORLD", str);
 }
 
 /**
