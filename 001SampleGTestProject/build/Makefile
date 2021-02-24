@@ -74,6 +74,17 @@ CMAKE_BINARY_DIR = C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\0
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	C:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -108,17 +119,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -173,6 +173,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -239,32 +252,89 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-main.obj: main.cpp.obj
+MyMathLib/MyMathLib.obj: MyMathLib/MyMathLib.cpp.obj
 
-.PHONY : main.obj
+.PHONY : MyMathLib/MyMathLib.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+MyMathLib/MyMathLib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/MyMathLib/MyMathLib.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/MyMathLib/MyMathLib.cpp.obj
+.PHONY : MyMathLib/MyMathLib.cpp.obj
 
-main.i: main.cpp.i
+MyMathLib/MyMathLib.i: MyMathLib/MyMathLib.cpp.i
 
-.PHONY : main.i
+.PHONY : MyMathLib/MyMathLib.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+MyMathLib/MyMathLib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/MyMathLib/MyMathLib.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/MyMathLib/MyMathLib.cpp.i
+.PHONY : MyMathLib/MyMathLib.cpp.i
 
-main.s: main.cpp.s
+MyMathLib/MyMathLib.s: MyMathLib/MyMathLib.cpp.s
 
-.PHONY : main.s
+.PHONY : MyMathLib/MyMathLib.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+MyMathLib/MyMathLib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/MyMathLib/MyMathLib.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/MyMathLib/MyMathLib.cpp.s
+.PHONY : MyMathLib/MyMathLib.cpp.s
+
+src/main.obj: src/main.cpp.obj
+
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+tests/test.obj: tests/test.cpp.obj
+
+.PHONY : tests/test.obj
+
+# target to build an object file
+tests/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tests/test.cpp.obj
+.PHONY : tests/test.cpp.obj
+
+tests/test.i: tests/test.cpp.i
+
+.PHONY : tests/test.i
+
+# target to preprocess a source file
+tests/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
+
+tests/test.s: tests/test.cpp.s
+
+.PHONY : tests/test.s
+
+# target to generate assembly for a file
+tests/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -283,9 +353,16 @@ help:
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... main
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... test
+	@echo ... MyMathLib/MyMathLib.obj
+	@echo ... MyMathLib/MyMathLib.i
+	@echo ... MyMathLib/MyMathLib.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... tests/test.obj
+	@echo ... tests/test.i
+	@echo ... tests/test.s
 .PHONY : help
 
 

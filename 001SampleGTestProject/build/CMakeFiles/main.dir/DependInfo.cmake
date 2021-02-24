@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/main.cpp" "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/build/CMakeFiles/main.dir/main.cpp.obj"
+  "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/MyMathLib/MyMathLib.cpp" "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/build/CMakeFiles/main.dir/MyMathLib/MyMathLib.cpp.obj"
+  "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/src/main.cpp" "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/build/CMakeFiles/main.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../googletest/include"
-  "../googlemock/include"
   )
 
 # Targets to which this target links.
