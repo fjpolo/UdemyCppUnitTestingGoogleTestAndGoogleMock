@@ -1,0 +1,5 @@
+/home/osboxes/GoogleTestWithLib/build/CMakeFiles/edit_cache.dir
+/home/osboxes/GoogleTestWithLib/build/CMakeFiles/commonLibrary.dir
+/home/osboxes/GoogleTestWithLib/build/CMakeFiles/rebuild_cache.dir
+/home/osboxes/GoogleTestWithLib/build/CMakeFiles/unitTestRunner.dir
+/home/osboxes/GoogleTestWithLib/build/CMakeFiles/mainApp.dir

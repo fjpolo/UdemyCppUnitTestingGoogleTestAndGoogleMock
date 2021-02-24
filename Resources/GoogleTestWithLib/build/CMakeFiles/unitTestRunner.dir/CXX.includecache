@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osboxes/GoogleTestWithLib/LibraryCode.hpp
+
+/home/osboxes/GoogleTestWithLib/testRunner.cpp
+iostream
+-
+gtest/gtest.h
+-
+LibraryCode.hpp
+/home/osboxes/GoogleTestWithLib/LibraryCode.hpp
+
