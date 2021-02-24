@@ -1,8 +1,23 @@
 [
 {
   "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\main.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\001SampleGTestProject\\main.cpp",
-  "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/main.cpp"
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\tests\\test.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\001SampleGTestProject\\tests\\test.cpp",
+  "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/tests/test.cpp"
+},
+{
+  "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\MyMathLib\\MyMathLib.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\001SampleGTestProject\\MyMathLib\\MyMathLib.cpp",
+  "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/MyMathLib/MyMathLib.cpp"
+},
+{
+  "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\001SampleGTestProject\\src\\main.cpp",
+  "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/src/main.cpp"
+},
+{
+  "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\MyMathLib\\MyMathLib.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\001SampleGTestProject\\MyMathLib\\MyMathLib.cpp",
+  "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/MyMathLib/MyMathLib.cpp"
 },
 {
   "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/001SampleGTestProject/build/googletest/googlemock",
