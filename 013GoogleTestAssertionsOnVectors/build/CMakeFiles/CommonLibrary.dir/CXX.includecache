@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/013GoogleTestAssertionsOnVectors/LibraryCode/LibraryCode.cpp
+LibraryCode.hpp
+C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/013GoogleTestAssertionsOnVectors/LibraryCode/LibraryCode.hpp
+vector
+-
+stdexcept
+-
+
+C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/013GoogleTestAssertionsOnVectors/LibraryCode/LibraryCode.hpp
+vector
+-
+
