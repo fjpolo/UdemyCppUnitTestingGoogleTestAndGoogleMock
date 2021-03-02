@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libemployeeManagerLibrary.a CMakeFiles/employeeManagerLibrary.dir/Libraries/EmployeeManager.cpp.obj
+C:\MinGW\bin\ranlib.exe libemployeeManagerLibrary.a
