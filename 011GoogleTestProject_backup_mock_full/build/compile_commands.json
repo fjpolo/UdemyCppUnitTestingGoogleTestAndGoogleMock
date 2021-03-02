@@ -1,6 +1,16 @@
 [
 {
   "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/CommonLibrary.dir/includes_CXX.rsp -g -o CMakeFiles\\CommonLibrary.dir\\Libraries\\EmployeeManager.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\011GoogleTestProject_backup_mock_full\\Libraries\\EmployeeManager.cpp",
+  "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/Libraries/EmployeeManager.cpp"
+},
+{
+  "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/CommonLibrary.dir/includes_CXX.rsp -g -o CMakeFiles\\CommonLibrary.dir\\Libraries\\IDatabaseConnection.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\011GoogleTestProject_backup_mock_full\\Libraries\\IDatabaseConnection.cpp",
+  "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/Libraries/IDatabaseConnection.cpp"
+},
+{
+  "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/build",
   "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mainApp.dir/includes_CXX.rsp -g -o CMakeFiles\\mainApp.dir\\src\\main.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\011GoogleTestProject_backup_mock_full\\src\\main.cpp",
   "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/src/main.cpp"
 },
@@ -11,12 +21,12 @@
 },
 {
   "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/employeeManagerLibrary.dir/includes_CXX.rsp -g -o CMakeFiles\\employeeManagerLibrary.dir\\Libraries\\EmployeeManager.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\011GoogleTestProject_backup_mock_full\\Libraries\\EmployeeManager.cpp",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/testRunner.dir/includes_CXX.rsp -g -o CMakeFiles\\testRunner.dir\\Libraries\\EmployeeManager.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\011GoogleTestProject_backup_mock_full\\Libraries\\EmployeeManager.cpp",
   "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/Libraries/EmployeeManager.cpp"
 },
 {
   "directory": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/databaseConnectionLibrary.dir/includes_CXX.rsp -g -o CMakeFiles\\databaseConnectionLibrary.dir\\Libraries\\IDatabaseConnection.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\011GoogleTestProject_backup_mock_full\\Libraries\\IDatabaseConnection.cpp",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/testRunner.dir/includes_CXX.rsp -g -o CMakeFiles\\testRunner.dir\\Libraries\\IDatabaseConnection.cpp.obj -c C:\\Users\\fpolo\\Downloads\\Franco\\Courses\\Coursera\\GoogleTest\\011GoogleTestProject_backup_mock_full\\Libraries\\IDatabaseConnection.cpp",
   "file": "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/Libraries/IDatabaseConnection.cpp"
 },
 {

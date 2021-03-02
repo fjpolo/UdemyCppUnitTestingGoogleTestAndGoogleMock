@@ -98,6 +98,7 @@ mainApp_EXTERNAL_OBJECTS =
 
 mainApp.exe: CMakeFiles/mainApp.dir/src/main.cpp.obj
 mainApp.exe: CMakeFiles/mainApp.dir/build.make
+mainApp.exe: libCommonLibrary.a
 mainApp.exe: CMakeFiles/mainApp.dir/linklibs.rsp
 mainApp.exe: CMakeFiles/mainApp.dir/objects1.rsp
 mainApp.exe: CMakeFiles/mainApp.dir/link.txt

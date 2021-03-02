@@ -10,6 +10,13 @@ IDatabaseConnection::IDatabaseConnection(std::string serverAddress) : mServerAdd
 
 /**
  * \class IDatabaseConnection
+ * \fn destructor
+ */
+IDatabaseConnection::~IDatabaseConnection(){
+}
+
+/**
+ * \class IDatabaseConnection
  * \fn connect
  */
 void IDatabaseConnection::connect(){

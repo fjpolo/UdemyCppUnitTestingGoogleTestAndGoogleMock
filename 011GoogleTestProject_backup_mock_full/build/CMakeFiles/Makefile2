@@ -71,10 +71,9 @@ CMAKE_BINARY_DIR = C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\0
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/CommonLibrary.dir/all
 all: CMakeFiles/mainApp.dir/all
 all: CMakeFiles/testRunner.dir/all
-all: CMakeFiles/databaseConnectionLibrary.dir/all
-all: CMakeFiles/employeeManagerLibrary.dir/all
 all: googletest/all
 
 .PHONY : all
@@ -85,10 +84,9 @@ preinstall: googletest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/CommonLibrary.dir/clean
 clean: CMakeFiles/mainApp.dir/clean
 clean: CMakeFiles/testRunner.dir/clean
-clean: CMakeFiles/databaseConnectionLibrary.dir/clean
-clean: CMakeFiles/employeeManagerLibrary.dir/clean
 clean: googletest/clean
 
 .PHONY : clean
@@ -154,18 +152,45 @@ googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/cle
 .PHONY : googletest/googletest/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/CommonLibrary.dir
+
+# All Build rule for target.
+CMakeFiles/CommonLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=1,2,3 "Built target CommonLibrary"
+.PHONY : CMakeFiles/CommonLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CommonLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CommonLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 0
+.PHONY : CMakeFiles/CommonLibrary.dir/rule
+
+# Convenience name for target.
+CommonLibrary: CMakeFiles/CommonLibrary.dir/rule
+
+.PHONY : CommonLibrary
+
+# clean rule for target.
+CMakeFiles/CommonLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/clean
+.PHONY : CMakeFiles/CommonLibrary.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/mainApp.dir
 
 # All Build rule for target.
-CMakeFiles/mainApp.dir/all:
+CMakeFiles/mainApp.dir/all: CMakeFiles/CommonLibrary.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mainApp.dir\build.make CMakeFiles/mainApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mainApp.dir\build.make CMakeFiles/mainApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=13,14 "Built target mainApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=12,13 "Built target mainApp"
 .PHONY : CMakeFiles/mainApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mainApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/mainApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 0
 .PHONY : CMakeFiles/mainApp.dir/rule
@@ -184,16 +209,16 @@ CMakeFiles/mainApp.dir/clean:
 # Target rules for target CMakeFiles/testRunner.dir
 
 # All Build rule for target.
-CMakeFiles/testRunner.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/testRunner.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+CMakeFiles/testRunner.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=15,16 "Built target testRunner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=14,15,16,17 "Built target testRunner"
 .PHONY : CMakeFiles/testRunner.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testRunner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/testRunner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 0
 .PHONY : CMakeFiles/testRunner.dir/rule
@@ -209,68 +234,14 @@ CMakeFiles/testRunner.dir/clean:
 .PHONY : CMakeFiles/testRunner.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/databaseConnectionLibrary.dir
-
-# All Build rule for target.
-CMakeFiles/databaseConnectionLibrary.dir/all: CMakeFiles/employeeManagerLibrary.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\databaseConnectionLibrary.dir\build.make CMakeFiles/databaseConnectionLibrary.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\databaseConnectionLibrary.dir\build.make CMakeFiles/databaseConnectionLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=1,2 "Built target databaseConnectionLibrary"
-.PHONY : CMakeFiles/databaseConnectionLibrary.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/databaseConnectionLibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/databaseConnectionLibrary.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 0
-.PHONY : CMakeFiles/databaseConnectionLibrary.dir/rule
-
-# Convenience name for target.
-databaseConnectionLibrary: CMakeFiles/databaseConnectionLibrary.dir/rule
-
-.PHONY : databaseConnectionLibrary
-
-# clean rule for target.
-CMakeFiles/databaseConnectionLibrary.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\databaseConnectionLibrary.dir\build.make CMakeFiles/databaseConnectionLibrary.dir/clean
-.PHONY : CMakeFiles/databaseConnectionLibrary.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/employeeManagerLibrary.dir
-
-# All Build rule for target.
-CMakeFiles/employeeManagerLibrary.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\employeeManagerLibrary.dir\build.make CMakeFiles/employeeManagerLibrary.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\employeeManagerLibrary.dir\build.make CMakeFiles/employeeManagerLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=3,4 "Built target employeeManagerLibrary"
-.PHONY : CMakeFiles/employeeManagerLibrary.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/employeeManagerLibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/employeeManagerLibrary.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles 0
-.PHONY : CMakeFiles/employeeManagerLibrary.dir/rule
-
-# Convenience name for target.
-employeeManagerLibrary: CMakeFiles/employeeManagerLibrary.dir/rule
-
-.PHONY : employeeManagerLibrary
-
-# clean rule for target.
-CMakeFiles/employeeManagerLibrary.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\employeeManagerLibrary.dir\build.make CMakeFiles/employeeManagerLibrary.dir/clean
-.PHONY : CMakeFiles/employeeManagerLibrary.dir/clean
-
-#=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=7,8 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=6,7 "Built target gmock_main"
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -297,7 +268,7 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=5,6 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=4,5 "Built target gmock"
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -324,7 +295,7 @@ googletest/googlemock/CMakeFiles/gmock.dir/clean:
 googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=9,10 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=8,9 "Built target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -351,7 +322,7 @@ googletest/googletest/CMakeFiles/gtest.dir/clean:
 googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=11,12 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=10,11 "Built target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.

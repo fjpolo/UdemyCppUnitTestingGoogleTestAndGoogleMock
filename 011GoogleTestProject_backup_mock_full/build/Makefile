@@ -74,18 +74,6 @@ CMAKE_BINARY_DIR = C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\0
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -97,6 +85,18 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	C:\CMake\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -175,6 +175,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named CommonLibrary
+
+# Build rule for target.
+CommonLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CommonLibrary
+.PHONY : CommonLibrary
+
+# fast build rule for target.
+CommonLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/build
+.PHONY : CommonLibrary/fast
+
+#=============================================================================
 # Target rules for targets named mainApp
 
 # Build rule for target.
@@ -199,32 +212,6 @@ testRunner: cmake_check_build_system
 testRunner/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/build
 .PHONY : testRunner/fast
-
-#=============================================================================
-# Target rules for targets named databaseConnectionLibrary
-
-# Build rule for target.
-databaseConnectionLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 databaseConnectionLibrary
-.PHONY : databaseConnectionLibrary
-
-# fast build rule for target.
-databaseConnectionLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\databaseConnectionLibrary.dir\build.make CMakeFiles/databaseConnectionLibrary.dir/build
-.PHONY : databaseConnectionLibrary/fast
-
-#=============================================================================
-# Target rules for targets named employeeManagerLibrary
-
-# Build rule for target.
-employeeManagerLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 employeeManagerLibrary
-.PHONY : employeeManagerLibrary
-
-# fast build rule for target.
-employeeManagerLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\employeeManagerLibrary.dir\build.make CMakeFiles/employeeManagerLibrary.dir/build
-.PHONY : employeeManagerLibrary/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -284,7 +271,8 @@ Libraries/EmployeeManager.obj: Libraries/EmployeeManager.cpp.obj
 
 # target to build an object file
 Libraries/EmployeeManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\employeeManagerLibrary.dir\build.make CMakeFiles/employeeManagerLibrary.dir/Libraries/EmployeeManager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/Libraries/EmployeeManager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.obj
 .PHONY : Libraries/EmployeeManager.cpp.obj
 
 Libraries/EmployeeManager.i: Libraries/EmployeeManager.cpp.i
@@ -293,7 +281,8 @@ Libraries/EmployeeManager.i: Libraries/EmployeeManager.cpp.i
 
 # target to preprocess a source file
 Libraries/EmployeeManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\employeeManagerLibrary.dir\build.make CMakeFiles/employeeManagerLibrary.dir/Libraries/EmployeeManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/Libraries/EmployeeManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.i
 .PHONY : Libraries/EmployeeManager.cpp.i
 
 Libraries/EmployeeManager.s: Libraries/EmployeeManager.cpp.s
@@ -302,7 +291,8 @@ Libraries/EmployeeManager.s: Libraries/EmployeeManager.cpp.s
 
 # target to generate assembly for a file
 Libraries/EmployeeManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\employeeManagerLibrary.dir\build.make CMakeFiles/employeeManagerLibrary.dir/Libraries/EmployeeManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/Libraries/EmployeeManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.s
 .PHONY : Libraries/EmployeeManager.cpp.s
 
 Libraries/IDatabaseConnection.obj: Libraries/IDatabaseConnection.cpp.obj
@@ -311,7 +301,8 @@ Libraries/IDatabaseConnection.obj: Libraries/IDatabaseConnection.cpp.obj
 
 # target to build an object file
 Libraries/IDatabaseConnection.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\databaseConnectionLibrary.dir\build.make CMakeFiles/databaseConnectionLibrary.dir/Libraries/IDatabaseConnection.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/Libraries/IDatabaseConnection.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.obj
 .PHONY : Libraries/IDatabaseConnection.cpp.obj
 
 Libraries/IDatabaseConnection.i: Libraries/IDatabaseConnection.cpp.i
@@ -320,7 +311,8 @@ Libraries/IDatabaseConnection.i: Libraries/IDatabaseConnection.cpp.i
 
 # target to preprocess a source file
 Libraries/IDatabaseConnection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\databaseConnectionLibrary.dir\build.make CMakeFiles/databaseConnectionLibrary.dir/Libraries/IDatabaseConnection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/Libraries/IDatabaseConnection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.i
 .PHONY : Libraries/IDatabaseConnection.cpp.i
 
 Libraries/IDatabaseConnection.s: Libraries/IDatabaseConnection.cpp.s
@@ -329,7 +321,8 @@ Libraries/IDatabaseConnection.s: Libraries/IDatabaseConnection.cpp.s
 
 # target to generate assembly for a file
 Libraries/IDatabaseConnection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\databaseConnectionLibrary.dir\build.make CMakeFiles/databaseConnectionLibrary.dir/Libraries/IDatabaseConnection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommonLibrary.dir\build.make CMakeFiles/CommonLibrary.dir/Libraries/IDatabaseConnection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testRunner.dir\build.make CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.s
 .PHONY : Libraries/IDatabaseConnection.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -398,8 +391,7 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... databaseConnectionLibrary
-	@echo ... employeeManagerLibrary
+	@echo ... CommonLibrary
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest

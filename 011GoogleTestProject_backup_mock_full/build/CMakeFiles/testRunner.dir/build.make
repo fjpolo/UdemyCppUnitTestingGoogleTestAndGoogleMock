@@ -89,14 +89,46 @@ CMakeFiles/testRunner.dir/tests/testRunner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testRunner.dir/tests/testRunner.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\tests\testRunner.cpp -o CMakeFiles\testRunner.dir\tests\testRunner.cpp.s
 
+CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.obj: CMakeFiles/testRunner.dir/flags.make
+CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.obj: CMakeFiles/testRunner.dir/includes_CXX.rsp
+CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.obj: ../Libraries/EmployeeManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\testRunner.dir\Libraries\EmployeeManager.cpp.obj -c C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\Libraries\EmployeeManager.cpp
+
+CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\Libraries\EmployeeManager.cpp > CMakeFiles\testRunner.dir\Libraries\EmployeeManager.cpp.i
+
+CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\Libraries\EmployeeManager.cpp -o CMakeFiles\testRunner.dir\Libraries\EmployeeManager.cpp.s
+
+CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.obj: CMakeFiles/testRunner.dir/flags.make
+CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.obj: CMakeFiles/testRunner.dir/includes_CXX.rsp
+CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.obj: ../Libraries/IDatabaseConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\testRunner.dir\Libraries\IDatabaseConnection.cpp.obj -c C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\Libraries\IDatabaseConnection.cpp
+
+CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\Libraries\IDatabaseConnection.cpp > CMakeFiles\testRunner.dir\Libraries\IDatabaseConnection.cpp.i
+
+CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\Libraries\IDatabaseConnection.cpp -o CMakeFiles\testRunner.dir\Libraries\IDatabaseConnection.cpp.s
+
 # Object files for target testRunner
 testRunner_OBJECTS = \
-"CMakeFiles/testRunner.dir/tests/testRunner.cpp.obj"
+"CMakeFiles/testRunner.dir/tests/testRunner.cpp.obj" \
+"CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.obj" \
+"CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.obj"
 
 # External object files for target testRunner
 testRunner_EXTERNAL_OBJECTS =
 
 testRunner.exe: CMakeFiles/testRunner.dir/tests/testRunner.cpp.obj
+testRunner.exe: CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.obj
+testRunner.exe: CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.obj
 testRunner.exe: CMakeFiles/testRunner.dir/build.make
 testRunner.exe: lib/libgtestd.a
 testRunner.exe: lib/libgmockd.a
@@ -104,7 +136,7 @@ testRunner.exe: lib/libgtestd.a
 testRunner.exe: CMakeFiles/testRunner.dir/linklibs.rsp
 testRunner.exe: CMakeFiles/testRunner.dir/objects1.rsp
 testRunner.exe: CMakeFiles/testRunner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable testRunner.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\fpolo\Downloads\Franco\Courses\Coursera\GoogleTest\011GoogleTestProject_backup_mock_full\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testRunner.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testRunner.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

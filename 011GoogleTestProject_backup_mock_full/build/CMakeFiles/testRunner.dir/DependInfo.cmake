@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/Libraries/EmployeeManager.cpp" "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/build/CMakeFiles/testRunner.dir/Libraries/EmployeeManager.cpp.obj"
+  "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/Libraries/IDatabaseConnection.cpp" "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/build/CMakeFiles/testRunner.dir/Libraries/IDatabaseConnection.cpp.obj"
   "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/tests/testRunner.cpp" "C:/Users/fpolo/Downloads/Franco/Courses/Coursera/GoogleTest/011GoogleTestProject_backup_mock_full/build/CMakeFiles/testRunner.dir/tests/testRunner.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
