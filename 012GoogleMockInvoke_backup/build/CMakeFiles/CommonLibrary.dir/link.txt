@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libCommonLibrary.a CMakeFiles/CommonLibrary.dir/Libraries/EmployeeManager.cpp.obj CMakeFiles/CommonLibrary.dir/Libraries/IDatabaseConnection.cpp.obj
+C:\MinGW\bin\ranlib.exe libCommonLibrary.a
