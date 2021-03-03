@@ -1,4 +1,4 @@
-C++ Unit Testing: Google Test and Google Mock
+# C++ Unit Testing: Google Test and Google Mock
 
 ## Link to the course:
 https://www.udemy.com/course/cplusplus-unit-testing-google-test-and-google-mock
